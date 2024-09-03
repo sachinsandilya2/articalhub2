@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    border: 2px solid #ffeb3b; /* Light yellow border */
+    padding: 20px;
+    background-color: #fff8e1; /* Very light yellow background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    color: #f57f17; /* Warm yellow text */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    position: relative; /* For positioning the underline */
+}
+
+h1::after {
+    content: ""; 
+    display: block; 
+    width: 100%;
+    height: 4px; /* Thickness of underline */
+    background-color: #f00; /* Red underline */
+    position: absolute; 
+    bottom: -10px; /* Position below the text */
+    left: 0; /* Align with the left edge */
+}
+
+h2 {
+    color: #fbc02d; /* Bright yellow text */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    position: relative; /* For positioning the underline */
+}
+
+h2::after {
+    content: ""; 
+    display: block; 
+    width: 100%;
+    height: 2px; /* Thickness of underline */
+    background-color: #f00; /* Red underline */
+    position: absolute; 
+    bottom: -5px; /* Position below the text */
+    left: 0; /* Align with the left edge */
+}
+
+p {
+    margin: 20px 0;
+    line-height: 1.6; /* Improve readability */
+}
+
+.photo-section img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+a {
+    color: #f57f17; /* Warm yellow link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.comment-section, .qa-section, .email-section {
+    margin: 20px 0;
+    padding: 20px; /* Consistent padding */
+    background-color: #fff; /* White background for sections */
+    border: 2px solid #ffeb3b; /* Slightly thicker yellow border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+textarea {
+    width: calc(100% - 22px); /* Adjust width to fit padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Light border for textarea */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Consistent font size */
+}
+
+.comment-section button, .qa-section button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 25px; /* Larger button */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    background-color: #f57f17; /* Warm yellow background */
+    color: #fff;
+    font-size: 1.2em; /* Larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.comment-section button:hover, .qa-section button:hover {
+    background-color: #e65100; /* Darker yellow on hover */
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px; /* Position at the bottom */
+    right: 20px;
+    padding: 20px; /* Larger padding */
+    background-color: #f57f17; /* Warm yellow background for notification */
+    color: #fff; /* White text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Larger shadow for prominence */
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    font-size: 1.2em; /* Larger font size for visibility */
+}
+
+.link-section {
+    width: 100%;
+    position: fixed; /* Fixed position to stay at the bottom */
+    bottom: 0;
+    left: 0;
+    background-color: #2196F3; /* Blue background */
+    padding: 15px 0; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.link-section a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    margin: 0 20px; /* Spacing between links */
+    font-size: 1.5em; /* Larger font size */
+}
+
+.link-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
